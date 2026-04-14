@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+.sitio {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #535353;
+  color: white;
+  padding: 15px 50px;
+}
+
+.header-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo {
+  background: #f39c12;
+  color: white;
+  padding: 8px 12px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.nombre-header {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.menu {
+  display: flex;
+  gap: 25px;
+}
+
+.menu a {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: white;
+}
+
+.site-main {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to bottom, #000000, #747575);
+  color: white;
+  padding: 40px;
+}
+
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1000px;
+  width: 100%;
+}
+
+.texto h1 {
+  font-size: 3rem;
+  margin-bottom: 10px;
+}
+
+.texto h1 span {
+  color: #f39c12;
+}
+
+.texto h2 {
+  font-weight: 300;
+  margin-bottom: 20px;
+  color: #bdc3c7;
+}
+
+.texto p {
+  margin-bottom: 10px;
+  font-style: italic;
+  max-width: 500px;
+  line-height: 1.5;
+}
+
+.foto-perfil {
+  width: 250px;
+  height: 250px;
+  background: #dcdde1;
+  border-radius: 50%;
+  border: 8px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.usuario-icono {
+  width: 100%;
+  height: 100%;
+  background-image: url("imagenes/foto\ goku.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  position: relative;
+}
