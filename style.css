@@ -56,11 +56,12 @@
 .site-main {
   flex: 1;
   display: flex;
+  flex-direction: column; /* Esto corrige el orden de arriba hacia abajo */
   align-items: center;
-  justify-content: center;
   background: linear-gradient(to bottom, #000000, #747575);
   color: white;
   padding: 40px;
+  width: 100%;
 }
 
 .hero-content {
@@ -114,4 +115,79 @@
   background-repeat: no-repeat;
   border-radius: 50%;
   position: relative;
+}
+
+/* Estilos para la sección Sobre Mí */
+.sobre-mi-container {
+    width: 100%;
+    max-width: 1000px;
+    margin-top: 80px; /* Espacio con la sección de arriba */
+    padding-bottom: 50px;
+}
+
+.encabezado-seccion {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.encabezado-seccion p {
+    color: #bdc3c7;
+    font-size: 0.9rem;
+    margin-bottom: 5px;
+}
+
+.subrayado-naranja {
+    width: 50px;
+    height: 4px;
+    background-color: #f39c12;
+    margin: 10px auto;
+}
+
+/* Flexbox para poner texto e información lado a lado */
+.layout-sobre-mi {
+    display: flex;
+    gap: 50px;
+    align-items: flex-start;
+}
+
+.bio-profesional {
+    flex: 2; /* Ocupa más espacio */
+    line-height: 1.8;
+}
+
+.cita-steve {
+    margin-top: 25px;
+    padding: 15px 20px;
+    border-left: 5px solid #f39c12;
+    background: rgba(255, 255, 255, 0.05);
+    font-style: italic;
+    border-radius: 0 10px 10px 0;
+}
+
+.caja-datos-personales {
+    flex: 1; /* Ocupa menos espacio */
+    background: #1e1e1e;
+    padding: 25px;
+    border-radius: 15px;
+    border: 1px solid #333;
+}
+
+.caja-datos-personales h3 {
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+
+.caja-datos-personales ul {
+    list-style: none;
+}
+
+.caja-datos-personales li {
+    margin-bottom: 15px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #333;
+    font-size: 0.9rem;
+}
+
+.caja-datos-personales li strong {
+    color: #f39c12;
 }
