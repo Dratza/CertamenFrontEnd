@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
   margin: 0;
   padding: 0;
@@ -56,7 +59,7 @@
 .site-main {
   flex: 1;
   display: flex;
-  flex-direction: column; /* Esto corrige el orden de arriba hacia abajo */
+  flex-direction: column;
   align-items: center;
   background: linear-gradient(to bottom, #000000, #747575);
   color: white;
@@ -117,11 +120,11 @@
   position: relative;
 }
 
-/* Estilos para la sección Sobre Mí */
+
 .sobre-mi-container {
     width: 100%;
     max-width: 1000px;
-    margin-top: 80px; /* Espacio con la sección de arriba */
+    margin-top: 80px;
     padding-bottom: 50px;
 }
 
@@ -143,7 +146,6 @@
     margin: 10px auto;
 }
 
-/* Flexbox para poner texto e información lado a lado */
 .layout-sobre-mi {
     display: flex;
     gap: 50px;
@@ -151,7 +153,7 @@
 }
 
 .bio-profesional {
-    flex: 2; /* Ocupa más espacio */
+    flex: 2;
     line-height: 1.8;
 }
 
@@ -165,7 +167,7 @@
 }
 
 .caja-datos-personales {
-    flex: 1; /* Ocupa menos espacio */
+    flex: 1;
     background: #1e1e1e;
     padding: 25px;
     border-radius: 15px;
@@ -190,4 +192,59 @@
 
 .caja-datos-personales li strong {
     color: #f39c12;
+}
+* { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+.sitio { display: flex; flex-direction: column; min-height: 100vh; }
+.site-header { display: flex; justify-content: space-between; align-items: center; background: #535353; color: white; padding: 15px 50px; }
+.site-main { flex: 1; display: flex; flex-direction: column; align-items: center; background: linear-gradient(to bottom, #000000, #747575); color: white; padding: 40px; }
+.hero-content { display: flex; align-items: center; justify-content: space-between; max-width: 1000px; width: 100%; margin-bottom: 50px; }
+
+.encabezado-seccion { text-align: center; margin-bottom: 20px; }
+.subrayado-naranja { width: 50px; height: 4px; background-color: #f39c12; margin: 10px auto; }
+.sobre-mi-container, .habilidades-container { width: 100%; max-width: 1000px; margin-bottom: 50px; }
+
+.tabla-habilidades { width: 100%; max-width: 800px; margin: 0 auto; border-collapse: collapse; background: white; color: #333; }
+.tabla-habilidades th { background: #333; color: white; padding: 12px; }
+.tabla-habilidades td { padding: 12px; border: 1px solid #ddd; }
+.barra-contenedor { width: 100%; height: 10px; background: #eee; border-radius: 5px; }
+.barra-progreso { height: 100%; border-radius: 5px; }
+.habilidades-container {
+  scroll-margin-top: 10px;
+}
+
+
+.layout-sobre-mi { display: flex; gap: 40px; justify-content: center; }
+.caja-datos-personales { background: #222; padding: 20px; border-radius: 8px; }
+.contenedor-inferior {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 900px;
+    margin: 40px auto;
+}
+
+.tarjeta-info {
+    background: #464646;
+    color: #ffffff;
+    padding: 25px;
+    border-radius: 15px;
+    flex: 1;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.tarjeta-info h3 {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.badge {
+    background: #e74c3c;
+    color: white;
+    font-size: 0.7rem;
+    padding: 2px 6px;
+    border-radius: 4px;
+    font-family: monospace;
 }
