@@ -336,18 +336,18 @@ html {
 .contacto h2 {
   text-align: center;
   font-size: 2.5rem;
-  color: #f39c12;
+  color: #ffffff;
   margin-bottom: 5px;
   position: relative;
 }
 
-/* Línea decorativa Amarilla Mostaza bajo el título */
+
 .contacto h2::after {
   content: "";
   display: block;
   width: 60px;
   height: 4px;
-  background-color: #e1ad01; /* Amarillo Mostaza */
+  background-color: #e1ad01;
   margin: 10px auto;
   border-radius: 2px;
 }
@@ -358,7 +358,6 @@ html {
   margin-bottom: 40px;
 }
 
-/* Layout: Formulario e Info de Contacto */
 .contenido-contacto {
   display: flex;
   gap: 40px;
@@ -405,12 +404,12 @@ html {
 .grupo-input input:focus, 
 .grupo-input select:focus, 
 .grupo-input textarea:focus {
-  border-color: #e1ad01; /* Foco en amarillo mostaza */
+  border-color: #e1ad01;
 }
 
-/* Botón de Enviar */
+
 .btn-enviar {
-  background-color: #f39c12; /* Azul oscuro principal */
+  background-color: #f39c12;
   color: white;
   padding: 15px;
   border: none;
@@ -422,10 +421,10 @@ html {
 }
 
 .btn-enviar:hover {
-  background-color: #e1ad01; /* Cambio a mostaza al pasar el mouse */
+  background-color: #e1ad01;
 }
 
-/* Tarjeta Lateral de Información */
+
 .info-contacto {
   flex: 1;
   background-color: #f8f9fa;
@@ -452,7 +451,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* Círculos de los iconos en azul oscuro */
+
 .icono {
   background-color: #f39c12;
   color: white;
@@ -471,7 +470,6 @@ html {
   font-size: 0.95rem;
 }
 
-/* Responsividad para móviles */
 @media (max-width: 768px) {
   .contenido-contacto {
       flex-direction: column;
@@ -486,7 +484,7 @@ html {
 }
 
 .pie-pagina {
-  background-color: #181817; /* Azul oscuro del diseño */
+  background-color: #181817;
   color: white;
   padding: 40px 20px 20px 20px;
   font-family: Arial, sans-serif;
@@ -504,7 +502,7 @@ html {
   margin-bottom: 20px;
 }
 
-/* Estilo del Logo "YL" */
+
 .logo-nombre {
   display: flex;
   align-items: center;
@@ -512,14 +510,14 @@ html {
 }
 
 .logo-circulo {
-  background-color: #f39c12; /* Amarillo Mostaza */
+  background-color: #f39c12;
   color: white;
   width: 45px;
   height: 45px;
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 8px; /* Bordes ligeramente redondeados como en la imagen */
+  border-radius: 8px;
   font-weight: bold;
   font-size: 1.2rem;
 }
@@ -529,7 +527,7 @@ html {
   font-weight: bold;
 }
 
-/* Botones de Redes Sociales */
+
 .redes-sociales {
   display: flex;
   gap: 12px;
