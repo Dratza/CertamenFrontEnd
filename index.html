@@ -63,7 +63,6 @@
             </aside>
         </div>
     </section>
-
     <section id="habilidades" class="habilidades-container">
         <div class="encabezado-seccion">
             <p>Tecnologías y competencias</p>
@@ -181,7 +180,66 @@
             </figure>
         </div>
     </section>
-
+    <section class="contacto">
+        <div class="contenedor-contacto">
+            <h2>Contacto</h2>
+            <p class="subtitulo">Conversemos</p>
+    
+            <div class="contenido-contacto">
+                <form action="#" method="POST" class="formulario-contacto">
+                    <div class="fila-input">
+                        <div class="grupo-input">
+                            <label for="nombre">Nombre completo</label>
+                            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+                        </div>
+                        <div class="grupo-input">
+                            <label for="email">Correo electrónico</label>
+                            <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                        </div>
+                    </div>
+    
+                    <div class="grupo-input">
+                        <label for="asunto">Asunto</label>
+                        <select id="asunto" name="asunto">
+                            <option value="">Selecciona un asunto</option>
+                            <option value="trabajo">Propuesta de trabajo</option>
+                            <option value="colaboracion">Colaboración</option>
+                            <option value="otros">Otros</option>
+                        </select>
+                    </div>
+    
+                    <div class="grupo-input">
+                        <label for="mensaje">Mensaje</label>
+                        <textarea id="mensaje" name="mensaje" placeholder="Escribe tu mensaje aquí..." rows="5"></textarea>
+                    </div>
+    
+                    <button type="submit" class="btn-enviar">Enviar mensaje</button>
+                </form>
+    
+                <aside class="info-contacto">
+                    <h3>Información de contacto</h3>
+                    <ul>
+                        <li>
+                            <span class="icono">✉</span>
+                            <p>adnresmejias@email.com</p>
+                        </li>
+                        <li>
+                            <span class="icono">📍</span>
+                            <p>Concepcion, Chile</p>
+                        </li>
+                        <li>
+                            <span class="icono">📱</span>
+                            <p>+56 9 1234 5678</p>
+                        </li>
+                        <li>
+                            <span class="icono">🌐</span>
+                            <p>github.com/Dratza</p>
+                        </li>
+                    </ul>
+                </aside>
+            </div>
+        </div>
+    </section>
   </main>
 </div>
 </body>
