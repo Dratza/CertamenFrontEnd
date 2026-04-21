@@ -253,7 +253,7 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
   padding: 40px;
-  background-color: #2c2c2c; 
+
 }
 
 .tarjeta-proyecto {
@@ -321,4 +321,166 @@ html {
 
 .tarjeta-proyecto:hover img {
   transform: scale(1.05);
+}
+
+.contacto {
+  padding: 60px 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.contenedor-contacto {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.contacto h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  color: #f39c12;
+  margin-bottom: 5px;
+  position: relative;
+}
+
+/* Línea decorativa Amarilla Mostaza bajo el título */
+.contacto h2::after {
+  content: "";
+  display: block;
+  width: 60px;
+  height: 4px;
+  background-color: #e1ad01; /* Amarillo Mostaza */
+  margin: 10px auto;
+  border-radius: 2px;
+}
+
+.subtitulo {
+  text-align: center;
+  color: #7f8c8d;
+  margin-bottom: 40px;
+}
+
+/* Layout: Formulario e Info de Contacto */
+.contenido-contacto {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+}
+
+.formulario-contacto {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.fila-input {
+  display: flex;
+  gap: 20px;
+}
+
+.grupo-input {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.grupo-input label {
+  font-weight: bold;
+  color: #f39c12;
+  font-size: 0.9rem;
+}
+
+.grupo-input input, 
+.grupo-input select, 
+.grupo-input textarea {
+  padding: 12px;
+  border: 1px solid #ced4da;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.grupo-input input:focus, 
+.grupo-input select:focus, 
+.grupo-input textarea:focus {
+  border-color: #e1ad01; /* Foco en amarillo mostaza */
+}
+
+/* Botón de Enviar */
+.btn-enviar {
+  background-color: #f39c12; /* Azul oscuro principal */
+  color: white;
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-enviar:hover {
+  background-color: #e1ad01; /* Cambio a mostaza al pasar el mouse */
+}
+
+/* Tarjeta Lateral de Información */
+.info-contacto {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.info-contacto h3 {
+  color: #f39c12;
+  margin-bottom: 25px;
+  font-size: 1.2rem;
+}
+
+.info-contacto ul {
+  list-style: none;
+  padding: 0;
+}
+
+.info-contacto li {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+/* Círculos de los iconos en azul oscuro */
+.icono {
+  background-color: #f39c12;
+  color: white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.2rem;
+}
+
+.info-contacto p {
+  margin: 0;
+  color: #444;
+  font-size: 0.95rem;
+}
+
+/* Responsividad para móviles */
+@media (max-width: 768px) {
+  .contenido-contacto {
+      flex-direction: column;
+  }
+  .fila-input {
+      flex-direction: column;
+  }
+  .info-contacto {
+      width: 100%;
+      box-sizing: border-box;
+  }
 }
