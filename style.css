@@ -484,3 +484,92 @@ html {
       box-sizing: border-box;
   }
 }
+
+.pie-pagina {
+  background-color: #181817; /* Azul oscuro del diseño */
+  color: white;
+  padding: 40px 20px 20px 20px;
+  font-family: Arial, sans-serif;
+}
+
+.contenedor-footer {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.fila-superior {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* Estilo del Logo "YL" */
+.logo-nombre {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.logo-circulo {
+  background-color: #f39c12; /* Amarillo Mostaza */
+  color: white;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px; /* Bordes ligeramente redondeados como en la imagen */
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.nombre-usuario {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Botones de Redes Sociales */
+.redes-sociales {
+  display: flex;
+  gap: 12px;
+}
+
+.btn-social {
+  background-color: rgba(255, 255, 255, 0.1); 
+  color: white;
+  text-decoration: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  font-size: 0.8rem;
+  font-weight: bold;
+  transition: background 0.3s;
+}
+
+.btn-social:hover {
+  background-color: #f39c12;
+}
+
+.divisor-footer {
+  border: 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  margin-bottom: 20px;
+}
+
+.fila-inferior {
+  text-align: center;
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+@media (max-width: 600px) {
+  .fila-superior {
+      flex-direction: column;
+      gap: 20px;
+      text-align: center;
+  }
+}
